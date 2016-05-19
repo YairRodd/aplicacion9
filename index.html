@@ -18,35 +18,37 @@
 <body>
 <div data-role="page" id="page1">
  <div data-theme="a" data-role="header">
-  <h3>Acelerómetro y más</h3>
+  <h3>Geolocalizacion</h3>
  </div>
  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
-  <li class="ui-first-child ui-last-child">
+  <!-- <li class="ui-first-child ui-last-child">
    <a href="#page2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
     Acelerómetro
    </a>
-  </li>
+  </li>-->
   <li class="ui-first-child ui-last-child">
    <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
     Geolocalización
    </a>
   </li>
+  <!--
   <li class="ui-first-child ui-last-child">
    <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
      Cámara
    </a>
-  </li>
+  </li>-->
   </ul>
 <div data-theme="a" data-role="footer" data-position="fixed">
 <h3>
 Rogelio Yair Rodriguez Serrano
 </h3>
 </div>
-</div>
+</div><!--PAGE!-->
+<!--
 <div data-role="page" id="page2" data-theme="a">
 <div data-theme="a" data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
 <h3>
-Acelerómetro y más
+Aceleró
 </h3>
 </div>
 <div data-role="content" align="center">
@@ -65,28 +67,38 @@ Rogelio Yair Rodriguez Serrano
 </h3>
 </div>
 </div>
+-->
 <div data-role="page" id="page3" data-theme="a">
-<div data-theme="a" data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
-<h3>
-Acelerómetro y más
-</h3>
-</div>
-<div data-role="content" align="center">
-GEOLOCALIZACION
-<div align="center" id="geolocalizacion" style="width:90%; height:90%; padding:20px 20px;
-background-color:#999;">
-Esperando......
-</div>
-<a data-role="button" data-theme="a" href="#" onClick="Detente();">
-Detener
-</a>
-</div>
-<div data-theme="a" data-role="footer" data-position="fixed">
-<h3>
-Rogelio Yair Rodriguez Serrano
-</h3>
-</div>
-</div>
+   <div data-theme="a" data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
+     <h3>
+       Geolocalizacion
+     </h3>
+   </div>
+  <div data-role="content" align="center">
+     <div data-role="main" class="ui-content">
+       <a href="#datos" id="localizar" class="ui-btn ui-icon-eye ui-btn-icon-left ui-shadow">         Ubicar
+       </a>
+     </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+     <h3>
+      Rogelio yair Rodriguez Serrano
+     </h3>
+  </div><!--PAGE GEOLOCALIZACION FIN-->
+<div data-role="page" id="datos">
+  <div data-role="header"
+   <h2>Tus datos de localizacion son:</h2>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="localizacion">&nbsp;</div>
+  </div>
+   <div data-theme="a" data-role="footer" data-position="fixed">
+     <h3>
+        Rogelio Yair Rodriguez Serrano
+     </h3>
+  </div>
+</div><!--PAGEDATOS-->
+<!--
 <div data-role="page" id="page4" data-theme="a">
 <div data-theme="a" data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
 <h3>
@@ -103,6 +115,6 @@ Esperando......
 <div data-role="footer" data-theme="a">
  <h3>Rogelio Yair Rodriguez Serrano</h3>
 </div>
-</div>
+</div>-->
 </body>
 </html>
